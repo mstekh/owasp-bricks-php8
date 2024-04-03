@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  db: 
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: bricks
+      MYSQL_ROOT_PASSWORD: toor
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    command: ['--default-authentication-plugin=mysql_native_password']
+
+  www:
+    image: php:apache
+    volumes:
+      - ./:/var/www/html/bricks
+    ports:
+      - "80:80"
+      - "443:443"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8001:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
