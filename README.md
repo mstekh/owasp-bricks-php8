@@ -1,4 +1,3 @@
-# owasp-bricks-php8
 OWASP Bricks PHP8 - Login-1 Lab
 
 Overview
@@ -9,13 +8,9 @@ The login-1 lab is the first in a series of labs designed to teach users about c
 
 Features
 
-Based on OWASP Bricks PHP8 project
-Updated to support PHP 8
-Utilizes MySQLi functions for database interaction
-Contains a modified login-1 lab for learning about authentication vulnerabilities
+Based on OWASP Bricks PHP8 project Updated to support PHP 8 Utilizes MySQLi functions for database interaction Contains a modified login-1 lab for learning about authentication vulnerabilities
 
-Prerequisites
-Linux: Ensure you have apache2 and mysql services.
+Prerequisites Linux: Ensure you have apache2 and mysql services.
 
 Usage
 
@@ -23,13 +18,11 @@ Go to html folder
 
 Clone the repository:
 
-bash
-git clone https://github.com/your_username/owasp-bricks-php8.git
+bash git clone https://github.com/your_username/owasp-bricks-php8.git
 
 Navigate to the project directory:
 
-bash
-cd owasp-bricks-php8
+bash cd owasp-bricks-php8
 
 Access the OWASP Bricks PHP8 application:
 
@@ -41,16 +34,12 @@ The login-1 lab is centered around exploiting vulnerabilities related to authent
 
 The login credentials for this lab are:
 
-Username: admin
-Password: admin
+Username: admin Password: admin
 
 Your goal is to log in using MySQL injection methods, demonstrating common web application security issues associated with inadequate input validation and database query construction.
 
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Contributing Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+License This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
-Special thanks to the OWASP Bricks project contributors for their work on the original project.
+Acknowledgements Special thanks to the OWASP Bricks project contributors for their work on the original project.
